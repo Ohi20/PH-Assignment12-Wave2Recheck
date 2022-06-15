@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='mb-20'>
             <div class="navbar bg-base-100">
   <div class="navbar-start">
     <div class="dropdown">
@@ -17,7 +17,7 @@ const Navbar = () => {
             Categories
             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
           </a>
-          <ul class="p-2">
+          <ul class="p-2 bg-base-100">
           <li><Link to="/purchase">Purchase</Link></li>
           <li><Link to="/review">Review</Link></li>
           </ul>
@@ -27,7 +27,7 @@ const Navbar = () => {
             Docs
             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
           </a>
-          <ul class="p-2">
+          <ul class="p-2 bg-base-100">
           <li><Link to="/blogs">Blogs</Link></li>
           <li><Link to="/portfolio">Portfolio</Link></li>
           </ul>
