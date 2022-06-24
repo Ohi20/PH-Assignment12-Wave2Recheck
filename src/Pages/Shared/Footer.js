@@ -8,9 +8,9 @@ const Footer = () => {
                 backgroundSize: 'cover'
             }
         } class=" p-10 ">
-  <div className='footer text-xl text-secondary'>
+  <div className='footer text-xl text-dark'>
   <div >
-    <span class="footer-title text-secondary">Categories</span> 
+    <span class="footer-title text-dark">Categories</span> 
     <a class="link link-hover">Camera</a>
     <a class="link link-hover">Tripod</a>
     <a class="link link-hover">Lights</a>
@@ -32,7 +32,7 @@ const Footer = () => {
   </div>
   <footer class="footer footer-center pt-6 text-base-content">
   <div>
-    <p className='text-xl text-secondary font-bold'>Copyright © 2022 - Ashraf Ohi - Programming Hero</p>
+    <p className='text-xl text-dark font-bold'>Copyright © 2022 - Ashraf Ohi - Programming Hero</p>
   </div>
 </footer>
 </footer>
