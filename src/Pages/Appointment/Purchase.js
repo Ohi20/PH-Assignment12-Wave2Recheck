@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Footer from '../Shared/Footer';
+import Availableorders from './Availableorders';
 import Purchasebanner from './Purchasebanner';
 
 const Purchase = () => {
@@ -10,6 +11,8 @@ const Purchase = () => {
         <div>
             <Purchasebanner date={date}
             setDate={setDate}></Purchasebanner>
+            <Availableorders date={date}
+            setDate={setDate}></Availableorders>
             <Footer></Footer>
         </div>
     );
