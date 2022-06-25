@@ -7,7 +7,7 @@ const Orders = ({ service, setTreatment }) => {
     return (
         <div class="card lg:max-w-lg bg-base-100 shadow-xl my-10">
             <div class="card-body">
-                <h2 class="card-title text-dark text-2xl">{name}</h2>
+                <h2 class="card-title text-info-content text-2xl">{name}</h2>
                 <p className='text-xl'>
                     {
                         slots.length > 0 ? <span>{slots[0]}</span> : <span className='text-red-500'>No Slot Available </span>
@@ -17,7 +17,7 @@ const Orders = ({ service, setTreatment }) => {
                 <div class="card-actions justify-center">
 
                     <label onClick={() => setTreatment(service)}
-                        disabled={slots.length === 0} for="booking-modal" class="btn btn-ouline uppercase text-white">Book Order</label>
+                        disabled={slots.length === 0} for="booking-modal" class="btn btn-outline uppercase text-success-content">Book Order</label>
                 </div>
             </div>
         </div>
