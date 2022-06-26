@@ -22,7 +22,7 @@ const Purchasebanner = ({date, setDate}) => {
               selected={date}
               onSelect={setDate}
                />
-            <p className='text-center'>You have picked : {format(date, 'PP')}.</p>
+            <p className='text-center text-accent-focus'>You have picked : {format(date, 'PP')}.</p>
             </div>
           </div>
         </div>

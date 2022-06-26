@@ -2,6 +2,7 @@
     {
       
       "name": "Camera",
+      "description": "Camera in photography, is a device for recording an image of an object on a light-sensitive surface.",
       "slots": [
         "10.00 AM - 12.00 PM",
         "04.00 PM - 05.00 PM",
@@ -11,6 +12,7 @@
     {
       
       "name": "Tripod",
+      "description": "A tripod is a portable three-legged frame or stand, used as a platform for supporting the weight and maintaining the stability of some other object.",
       "slots": [
         "08.00 AM - 10.30 AM",
         "02.00 PM - 04.00 PM",
@@ -20,6 +22,7 @@
     {
       
       "name": "Flad Light",
+      "description": "Even front lighting of a subject, producing little contrast, no shadows, and no modeling.",
       "slots": [
         "09.30 AM - 11.30 AM",
         "02.30 PM - 03.30 PM",
@@ -29,6 +32,7 @@
     {
       
       "name": "Drone",
+      "description": "A drone is a flying robot that can be remotely controlled or fly autonomously using software-controlled flight plans in its embedded systems.",
       "slots": [
         "11.00 AM - 12.30 PM",
         "01.00 PM - 02.30 PM",
@@ -38,6 +42,7 @@
     {
       
       "name": "Trolly",
+      "description": "A trolley is a small cart on wheels that you use to carry things such as shopping or luggage.",
       "slots": [
         "03.00 PM - 04.30 PM",
         "7.30 PM - 8.30 PM",
@@ -47,6 +52,7 @@
     {
       
       "name": "Flash",
+      "description": "A small battery-operated portable electric light.",
       "slots": [
         "01.00 PM - 02.30 PM",
         "04.30 PM - 5.30 PM",

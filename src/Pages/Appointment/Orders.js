@@ -2,7 +2,7 @@ import React from 'react';
 
 const Orders = ({ service, setTreatment }) => {
 
-    const { name, slots } = service;
+    const { name, slots, description } = service;
 
     return (
         <div class="card lg:max-w-lg bg-base-100 shadow-xl my-10">
@@ -14,6 +14,7 @@ const Orders = ({ service, setTreatment }) => {
                     }
                 </p>
                 <p>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
+                <p>{description }</p>
                 <div class="card-actions justify-center">
 
                     <label onClick={() => setTreatment(service)}
