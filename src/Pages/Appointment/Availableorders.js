@@ -30,7 +30,7 @@ const Availableorders = ({date}) => {
             </div>
             {appointments && <Bookingorders date={date} 
             appointments={appointments}
-            setTreatment={setAppointments}></Bookingorders>}
+            setAppointments={setAppointments}></Bookingorders>}
         </div>
     );
 };
