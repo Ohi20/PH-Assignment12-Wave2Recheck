@@ -4,9 +4,10 @@ import Bookingorders from './Bookingorders';
 import Orders from './Orders';
 
 const Availableorders = ({date}) => {
-
-    const [treatment, setTreatment] = useState(null); 
+    
     const [services, setServices] = useState([]);
+
+    const [appointments, setAppointments] = useState(null);
 
     const formatedDate = format(date, "PP");
 
@@ -24,12 +25,12 @@ const Availableorders = ({date}) => {
                {
                   services?.map(service => <Orders  key={service._id}
                     service = {service}
-                    setTreatment= {setTreatment}></Orders>) 
+                    setAppointments= {setAppointments}></Orders>) 
                } 
             </div>
-            {treatment && <Bookingorders date={date} 
-            treatment={treatment}
-            setTreatment={setTreatment}></Bookingorders>}
+            {appointments && <Bookingorders date={date} 
+            appointments={appointments}
+            setTreatment={setAppointments}></Bookingorders>}
         </div>
     );
 };
