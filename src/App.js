@@ -10,6 +10,8 @@ import Dashboard from './Pages/Appointment/Dashboard';
 import Requireauth from './Pages/Login/Requireauth';
 import NotFound from './Pages/NotFound';
 import Portfolio from './Pages/Portfolio/Portfolio';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -25,8 +27,8 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
         <Route path="*" element={<NotFound/>} />
-        
-      </Routes>
+        </Routes>
+        <ToastContainer />
     </div>
   );
 }
