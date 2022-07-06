@@ -12,7 +12,7 @@ const Availableorders = ({date}) => {
     const formatedDate = format(date, "PP");
 
     useEffect( ()=> {
-        fetch('Orders.json')
+        fetch('http://localhost:5000/service')
         .then(res => res.json())
         .then(data => setServices(data));
     },[formatedDate])

@@ -1,14 +1,28 @@
 import { format } from 'date-fns';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 const Bookingorders = ({date, appointments, setAppointments}) => {
 
     const {_id, name, slots} = appointments;
+    
+    const [user, loading, error] = useAuthState(auth);
+
+    const formatedDate = format(date, "PP");
 
     const handlebooking = (event) => {
         event.preventDefault();
         const slot = event.target.slot.value;
         console.log(_id, name, slot);
+        const booking = {
+          appointmentsId: _id,
+          appointments: name,
+          date: formatedDate,
+          slot,
+          userEmail: user.email,
+          userName: user.displayName,
+          phone: event.target.phone.value       }
         setAppointments(null);  
     }
 
